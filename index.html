@@ -3,154 +3,248 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="theme-color" content="#0B132B" />
+    <meta name="theme-color" content="#0a0a0a" />
     <meta name="description" content="Trust Autos Ltd provides 24/7 emergency mobile tyre repair, tyre replacement, puncture repairs and roadside assistance across Huntingdon and Cambridgeshire." />
     <meta name="robots" content="index, follow" />
     <link rel="canonical" href="https://trustautos.co.uk/" />
     <meta property="og:type" content="website" />
     <meta property="og:title" content="24/7 Mobile Tyre Repair & Replacement | Trust Autos Ltd" />
     <meta property="og:description" content="Fast mobile tyre help across Huntingdon and Cambridgeshire. Call now for emergency roadside assistance." />
-    <meta property="og:image" content="https://trustautos.co.uk/trust-autos-mobile-tyre-van.png" />
+    <meta property="og:image" content="https://trustautos.co.uk/trust-autos-hero.jpg" />
     <meta property="og:locale" content="en_GB" />
     <title>24/7 Mobile Tyre Repair Huntingdon | Trust Autos Ltd</title>
     <style>
-      :root { --navy:#0b132b; --ink:#111111; --red:#e63946; --red-dark:#c92735; --green:#25d366; --cream:#f5f6f8; --line:#e4e7eb; --muted:#657083; --white:#fff; --radius:18px; --shadow:0 18px 45px rgba(11,19,43,.11); }
+      :root {
+        --black:#0a0a0a; --ink:#0e1013; --panel:#15171c; --panel-2:#1c1f26;
+        --orange:#f5871f; --orange-dark:#e0730d; --lime:#8bc53f; --lime-dark:#6fa82c;
+        --green:#25d366; --green-dark:#1dbd5a; --red:#e63946; --red-dark:#c92735;
+        --white:#ffffff; --muted:#9aa4b4; --muted-2:#6f7787;
+        --line:rgba(255,255,255,.10); --line-2:rgba(255,255,255,.06);
+        --radius:18px; --shadow:0 24px 60px rgba(0,0,0,.55);
+      }
       * { box-sizing:border-box; }
       html { scroll-behavior:smooth; }
-      body { margin:0; color:var(--navy); background:#fff; font-family:Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; line-height:1.5; }
+      body { margin:0; color:#e8ebf0; background:var(--black); font-family:Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; line-height:1.5; -webkit-font-smoothing:antialiased; }
       a { color:inherit; text-decoration:none; }
       button { font:inherit; }
-      .container { width:min(1160px, calc(100% - 40px)); margin:auto; }
-      .eyebrow { display:inline-flex; gap:8px; align-items:center; color:var(--red); font-size:.76rem; font-weight:900; letter-spacing:.12em; text-transform:uppercase; }
+      .container { width:min(1180px, calc(100% - 40px)); margin:auto; }
+      .eyebrow { display:inline-flex; gap:9px; align-items:center; color:var(--orange); font-size:.76rem; font-weight:900; letter-spacing:.14em; text-transform:uppercase; }
       .eyebrow::before { content:""; width:26px; height:2px; background:currentColor; }
-      .section-head { max-width:680px; margin-bottom:30px; }
+      .section-head { max-width:700px; margin-bottom:34px; }
       h1,h2,h3,p { margin-top:0; }
-      h1,h2,h3 { letter-spacing:-.04em; line-height:1.05; }
-      h1 { font-size:clamp(2.5rem, 5vw, 4.7rem); margin:.55rem 0 1.05rem; }
-      h2 { font-size:clamp(2rem, 3.5vw, 3.25rem); margin:.65rem 0 .85rem; }
-      h3 { font-size:1.1rem; margin-bottom:.45rem; }
-      .lead { max-width:640px; color:#4e596c; font-size:clamp(1rem, 1.7vw, 1.17rem); }
-      .top-strip { background:var(--red); color:#fff; font-weight:800; font-size:.82rem; }
-      .top-strip .container { min-height:36px; display:flex; align-items:center; justify-content:center; gap:10px; text-align:center; }
-      .pulse { width:8px; height:8px; border-radius:50%; background:#fff; box-shadow:0 0 0 5px rgba(255,255,255,.2); }
-      header { position:sticky; top:0; z-index:20; background:rgba(255,255,255,.94); backdrop-filter:blur(14px); border-bottom:1px solid rgba(11,19,43,.08); }
-      .nav { min-height:76px; display:flex; align-items:center; justify-content:space-between; gap:18px; }
-      .brand { display:flex; align-items:center; gap:10px; font-weight:950; letter-spacing:-.06em; font-size:1.28rem; white-space:nowrap; }
-      .brand-mark { width:34px; height:34px; border-radius:10px; background:var(--navy); color:#fff; display:grid; place-items:center; font-size:1.06rem; transform:skew(-8deg); }
-      .brand em { color:var(--red); font-style:normal; }
-      .nav-links { display:flex; gap:25px; font-size:.88rem; font-weight:750; }
-      .phone-nav { display:flex; align-items:center; gap:10px; font-size:.86rem; font-weight:800; }
-      .phone-nav span { color:var(--muted); display:block; font-size:.65rem; font-weight:800; letter-spacing:.09em; text-transform:uppercase; }
-      .phone-nav strong { display:block; color:var(--navy); font-size:1rem; }
+      h1,h2,h3 { letter-spacing:-.03em; line-height:1.04; color:#fff; }
+      h1 { font-size:clamp(2.55rem, 5.2vw, 4.8rem); margin:.6rem 0 1.1rem; font-weight:900; }
+      h2 { font-size:clamp(2rem, 3.6vw, 3.3rem); margin:.65rem 0 .85rem; font-weight:900; }
+      h3 { font-size:1.12rem; margin-bottom:.45rem; font-weight:800; }
+      .lead { max-width:640px; color:var(--muted); font-size:clamp(1rem, 1.7vw, 1.17rem); }
+      .hl-orange { color:var(--orange); }
+      .hl-lime { color:var(--lime); }
+
+      /* top strip */
+      .top-strip { background:linear-gradient(90deg, var(--orange), var(--orange-dark)); color:#160b00; font-weight:800; font-size:.82rem; }
+      .top-strip .container { min-height:38px; display:flex; align-items:center; justify-content:center; gap:10px; text-align:center; }
+      .pulse { width:8px; height:8px; border-radius:50%; background:#160b00; box-shadow:0 0 0 5px rgba(22,11,0,.18); animation:pulse 1.8s infinite; }
+      @keyframes pulse { 0%,100%{opacity:1;} 50%{opacity:.35;} }
+
+      /* header */
+      header { position:sticky; top:0; z-index:20; background:rgba(10,10,10,.82); backdrop-filter:blur(16px); border-bottom:1px solid var(--line); }
+      .nav { min-height:78px; display:flex; align-items:center; justify-content:space-between; gap:18px; }
+      .brand { display:flex; align-items:center; gap:11px; white-space:nowrap; }
+      .brand-logo { width:42px; height:46px; flex:none; }
+      .brand-txt { display:flex; flex-direction:column; line-height:1; }
+      .brand-txt b { font-weight:950; letter-spacing:-.04em; font-size:1.22rem; color:#fff; }
+      .brand-txt b em { color:var(--orange); font-style:normal; }
+      .brand-txt small { font-size:.58rem; letter-spacing:.16em; text-transform:uppercase; color:var(--muted-2); font-weight:700; margin-top:3px; }
+      .nav-links { display:flex; gap:26px; font-size:.88rem; font-weight:700; color:#cfd4dd; }
+      .nav-links a:hover { color:var(--orange); }
+      .phone-nav { display:flex; align-items:center; gap:11px; }
+      .phone-nav .pn-ic { width:38px; height:38px; border-radius:11px; background:var(--orange); color:#160b00; display:grid; place-items:center; font-size:1.05rem; flex:none; }
+      .phone-nav span { color:var(--muted-2); display:block; font-size:.62rem; font-weight:800; letter-spacing:.1em; text-transform:uppercase; }
+      .phone-nav strong { display:block; color:#fff; font-size:1.02rem; }
       .nav-call { display:none; }
-      .hero { overflow:hidden; position:relative; background:linear-gradient(108deg, #f7f9fc 0%, #fff 59%, #eef1f5 100%); }
-      .hero::before { content:""; position:absolute; width:600px; height:600px; top:-260px; right:-230px; border-radius:50%; background:rgba(230,57,70,.08); }
-      .hero-grid { min-height:635px; display:grid; grid-template-columns:1.03fr .97fr; align-items:center; position:relative; }
-      .hero-content { padding:78px 0 72px; position:relative; z-index:2; }
-      .hero h1 strong { color:var(--red); display:block; }
-      .hero-image { position:absolute; right:calc((100vw - min(1160px, calc(100vw - 40px)))/-2); top:0; height:100%; width:61%; display:flex; align-items:center; z-index:1; }
-      .hero-image::after { content:""; position:absolute; inset:0; background:linear-gradient(90deg, #f9fafc 0%, rgba(249,250,252,.04) 29%, transparent 70%); pointer-events:none; }
-      .hero-image img { width:100%; max-height:590px; object-fit:cover; object-position:center; mix-blend-mode:multiply; filter:contrast(1.03) saturate(.92); }
-      .trust-row { display:flex; flex-wrap:wrap; gap:9px 17px; margin:27px 0; }
-      .trust-row span { display:inline-flex; align-items:center; gap:7px; color:#324057; font-size:.87rem; font-weight:750; }
-      .trust-row span::before { content:"✓"; width:18px; height:18px; border-radius:50%; display:grid; place-items:center; background:#e8f7ee; color:#198c49; font-size:.7rem; font-weight:950; }
+
+      /* hero */
+      .hero { position:relative; overflow:hidden; background:var(--black); }
+      .hero-bg { position:absolute; inset:0; z-index:0; }
+      .hero-bg img { width:100%; height:100%; object-fit:cover; object-position:center; opacity:.95; }
+      .hero-bg::after { content:""; position:absolute; inset:0; background:linear-gradient(90deg, rgba(4,4,4,.96) 0%, rgba(6,6,6,.9) 32%, rgba(8,8,8,.55) 62%, rgba(8,8,8,.35) 100%), linear-gradient(180deg, rgba(6,6,6,.35) 0%, transparent 30%, rgba(6,6,6,.5) 100%); }
+      .hero-bg::before { content:""; position:absolute; z-index:1; width:520px; height:520px; top:-200px; left:-160px; border-radius:50%; background:radial-gradient(circle, rgba(245,135,31,.22), transparent 70%); }
+      .hero-grid { position:relative; z-index:2; min-height:640px; display:flex; align-items:center; }
+      .hero-content { padding:86px 0 78px; max-width:640px; }
+      .hero h1 strong { color:var(--orange); display:block; }
+      .hero .lead { color:#c6ccd6; }
+      .badge247 { display:inline-flex; align-items:center; gap:8px; background:rgba(245,135,31,.14); border:1px solid rgba(245,135,31,.4); color:var(--orange); padding:7px 14px; border-radius:50px; font-weight:800; font-size:.78rem; letter-spacing:.08em; text-transform:uppercase; }
+      .trust-row { display:flex; flex-wrap:wrap; gap:10px 20px; margin:28px 0; }
+      .trust-row span { display:inline-flex; align-items:center; gap:8px; color:#dfe4ec; font-size:.9rem; font-weight:700; }
+      .trust-row span::before { content:"✓"; width:20px; height:20px; border-radius:50%; display:grid; place-items:center; background:var(--lime); color:#0a0a0a; font-size:.72rem; font-weight:950; }
       .actions { display:flex; flex-wrap:wrap; gap:12px; }
-      .btn { min-height:55px; padding:0 22px; border-radius:10px; display:inline-flex; justify-content:center; align-items:center; gap:10px; font-weight:900; transition:transform .2s ease, background .2s ease, box-shadow .2s ease; box-shadow:0 9px 18px rgba(11,19,43,.12); }
+      .btn { min-height:56px; padding:0 24px; border-radius:12px; display:inline-flex; justify-content:center; align-items:center; gap:10px; font-weight:900; letter-spacing:.01em; transition:transform .18s ease, background .18s ease, box-shadow .18s ease; }
       .btn:hover { transform:translateY(-2px); }
-      .btn-call { color:#fff; background:var(--red); }
-      .btn-call:hover { background:var(--red-dark); }
-      .btn-whatsapp { color:#073d1d; background:var(--green); }
-      .btn-outline { color:var(--navy); background:#fff; border:1px solid var(--line); box-shadow:none; }
-      .hero-number { margin:18px 0 0; font-size:.95rem; font-weight:800; color:#4d596d; }
-      .hero-number a { color:var(--navy); font-size:1.18rem; margin-left:4px; }
-      .proof { background:var(--navy); color:#fff; }
-      .proof .container { min-height:94px; display:grid; grid-template-columns:repeat(4,1fr); align-items:center; }
-      .proof-item { padding:11px 25px; border-right:1px solid rgba(255,255,255,.16); display:flex; gap:12px; align-items:center; }
+      .btn-call { color:#160b00; background:var(--orange); box-shadow:0 12px 26px rgba(245,135,31,.32); }
+      .btn-call:hover { background:var(--orange-dark); }
+      .btn-whatsapp { color:#043018; background:var(--green); box-shadow:0 12px 26px rgba(37,211,102,.26); }
+      .btn-whatsapp:hover { background:var(--green-dark); }
+      .btn-outline { color:#fff; background:rgba(255,255,255,.04); border:1px solid var(--line); }
+      .btn-outline:hover { background:rgba(255,255,255,.09); }
+      .hero-number { margin:20px 0 0; font-size:.95rem; font-weight:700; color:#aeb5c1; }
+      .hero-number a { color:#fff; font-size:1.22rem; margin-left:4px; font-weight:900; }
+
+      /* proof bar */
+      .proof { background:linear-gradient(180deg, #101216, #0c0d10); border-top:1px solid var(--line); border-bottom:1px solid var(--line); }
+      .proof .container { min-height:98px; display:grid; grid-template-columns:repeat(4,1fr); align-items:center; }
+      .proof-item { padding:12px 26px; border-right:1px solid var(--line-2); display:flex; gap:13px; align-items:center; }
       .proof-item:last-child { border-right:0; }
-      .proof-icon { width:34px; height:34px; border-radius:50%; background:rgba(255,255,255,.12); display:grid; place-items:center; color:#f7c6ca; font-size:1rem; flex:none; }
-      .proof-item b { font-size:.9rem; display:block; }
-      .proof-item small { color:#bfc6d3; font-size:.74rem; display:block; }
-      section { padding:94px 0; }
+      .proof-icon { width:40px; height:40px; border-radius:12px; background:rgba(245,135,31,.14); display:grid; place-items:center; color:var(--orange); font-size:1.1rem; flex:none; }
+      .proof-item b { font-size:.92rem; display:block; color:#fff; }
+      .proof-item small { color:var(--muted); font-size:.75rem; display:block; }
+
+      section { padding:96px 0; }
       .service-grid { display:grid; grid-template-columns:repeat(4,1fr); gap:16px; }
-      .card { background:#fff; border:1px solid var(--line); border-radius:var(--radius); padding:23px; transition:transform .2s ease, box-shadow .2s ease; }
-      .card:hover { transform:translateY(-4px); box-shadow:var(--shadow); }
-      .service-icon { width:46px; height:46px; border-radius:13px; background:#fdefef; color:var(--red); display:grid; place-items:center; font-size:1.35rem; margin-bottom:17px; }
+      .card { background:var(--panel); border:1px solid var(--line); border-radius:var(--radius); padding:24px; transition:transform .2s ease, border-color .2s ease, box-shadow .2s ease; }
+      .card:hover { transform:translateY(-5px); border-color:rgba(245,135,31,.5); box-shadow:var(--shadow); }
+      .service-icon { width:48px; height:48px; border-radius:13px; background:linear-gradient(135deg, rgba(245,135,31,.2), rgba(245,135,31,.06)); color:var(--orange); display:grid; place-items:center; font-size:1.4rem; margin-bottom:18px; }
       .card p { color:var(--muted); font-size:.89rem; margin:0; }
-      .section-action { display:flex; gap:12px; flex-wrap:wrap; margin-top:28px; }
-      .why { background:var(--cream); }
+      .section-action { display:flex; gap:12px; flex-wrap:wrap; margin-top:30px; }
+
+      /* why */
+      .why { background:linear-gradient(180deg, #0c0d10, #101216); }
       .why-grid { display:grid; grid-template-columns:1.02fr .98fr; gap:64px; align-items:center; }
-      .why-copy .lead { margin-bottom:25px; }
+      .why-copy .lead { margin-bottom:26px; }
       .ticks { list-style:none; padding:0; margin:0; display:grid; grid-template-columns:1fr 1fr; gap:14px; }
-      .ticks li { font-weight:750; font-size:.92rem; display:flex; gap:10px; align-items:center; }
-      .ticks li::before { content:"✓"; width:22px; height:22px; background:#fff; color:var(--red); display:grid; place-items:center; box-shadow:0 3px 10px rgba(11,19,43,.1); border-radius:50%; font-size:.75rem; font-weight:950; flex:none; }
-      .stat-panel { background:var(--navy); border-radius:24px; padding:35px; color:#fff; position:relative; overflow:hidden; }
-      .stat-panel::after { content:"24/7"; position:absolute; right:-24px; bottom:-45px; font-weight:950; letter-spacing:-.12em; font-size:9rem; color:rgba(255,255,255,.045); }
-      .stat-panel h3 { font-size:1.7rem; margin-bottom:7px; position:relative; }
-      .stat-panel > p { color:#c5cbd6; max-width:370px; position:relative; }
-      .stats { display:grid; grid-template-columns:1fr 1fr; border-top:1px solid rgba(255,255,255,.16); margin-top:28px; position:relative; }
-      .stats div { padding:21px 5px 0; }
-      .stats div+div { padding-left:20px; border-left:1px solid rgba(255,255,255,.16); }
-      .stats strong { display:block; color:#ff8e96; font-size:1.3rem; }
-      .stats span { font-size:.78rem; color:#c5cbd6; }
-      .emergency { padding:0; background:var(--red); color:#fff; }
-      .emergency .container { min-height:246px; display:flex; align-items:center; justify-content:space-between; gap:36px; position:relative; overflow:hidden; }
-      .emergency .container::after { content:"HELP"; position:absolute; right:-13px; bottom:-37px; font-weight:950; letter-spacing:-.12em; font-size:11rem; color:rgba(255,255,255,.08); }
-      .emergency h2 { margin:5px 0; }
-      .emergency p { margin:0; font-size:1.08rem; color:#fff1f2; }
+      .ticks li { font-weight:700; font-size:.93rem; display:flex; gap:11px; align-items:center; color:#dfe4ec; }
+      .ticks li::before { content:"✓"; width:23px; height:23px; background:var(--lime); color:#0a0a0a; display:grid; place-items:center; border-radius:50%; font-size:.76rem; font-weight:950; flex:none; }
+      .stat-panel { background:linear-gradient(150deg, #1b1e25, #121319); border:1px solid var(--line); border-radius:24px; padding:36px; position:relative; overflow:hidden; }
+      .stat-panel::before { content:""; position:absolute; top:0; left:0; width:100%; height:4px; background:linear-gradient(90deg, var(--orange), var(--lime)); }
+      .stat-panel::after { content:"24/7"; position:absolute; right:-22px; bottom:-48px; font-weight:950; letter-spacing:-.12em; font-size:9rem; color:rgba(245,135,31,.06); }
+      .stat-panel h3 { font-size:1.7rem; margin-bottom:8px; position:relative; }
+      .stat-panel > p { color:var(--muted); max-width:370px; position:relative; }
+      .stats { display:grid; grid-template-columns:1fr 1fr; border-top:1px solid var(--line); margin-top:30px; position:relative; }
+      .stats div { padding:22px 5px 0; }
+      .stats div+div { padding-left:20px; border-left:1px solid var(--line); }
+      .stats strong { display:block; color:var(--orange); font-size:1.5rem; font-weight:900; }
+      .stats span { font-size:.78rem; color:var(--muted); }
+
+      /* emergency */
+      .emergency { padding:0; background:linear-gradient(100deg, var(--red-dark), var(--red) 45%, var(--orange)); color:#fff; }
+      .emergency .container { min-height:250px; display:flex; align-items:center; justify-content:space-between; gap:36px; position:relative; overflow:hidden; }
+      .emergency .container::after { content:"HELP"; position:absolute; right:-13px; bottom:-40px; font-weight:950; letter-spacing:-.12em; font-size:11rem; color:rgba(255,255,255,.09); }
+      .emergency h2 { margin:6px 0; color:#fff; }
+      .emergency p { margin:0; font-size:1.1rem; color:#fff2ec; }
       .emergency .eyebrow { color:#fff; }
       .emergency .eyebrow::before { background:#fff; }
       .emergency .actions { position:relative; z-index:1; flex:none; }
-      .emergency .btn-call { background:#fff; color:var(--red); }
-      .emergency .btn-whatsapp { color:#073d1d; }
+      .emergency .btn-call { background:#fff; color:var(--red-dark); box-shadow:0 12px 26px rgba(0,0,0,.25); }
+      .emergency .btn-call:hover { background:#f1f1f1; }
+
+      /* steps */
       .steps { display:grid; grid-template-columns:repeat(4,1fr); gap:16px; counter-reset:steps; }
-      .step { counter-increment:steps; background:#fff; border:1px solid var(--line); border-radius:var(--radius); padding:26px 21px; position:relative; }
-      .step::before { content:"0" counter(steps); color:#dfe3e9; display:block; font-weight:950; letter-spacing:-.09em; font-size:2rem; line-height:1; margin-bottom:20px; }
-      .step:not(:last-child)::after { content:""; width:19px; height:1px; background:#c8ced7; position:absolute; top:42px; right:-18px; z-index:1; }
+      .step { counter-increment:steps; background:var(--panel); border:1px solid var(--line); border-radius:var(--radius); padding:28px 22px; position:relative; }
+      .step::before { content:"0" counter(steps); color:var(--orange); opacity:.85; display:block; font-weight:950; letter-spacing:-.06em; font-size:2.1rem; line-height:1; margin-bottom:22px; }
+      .step:not(:last-child)::after { content:""; width:20px; height:1px; background:var(--line); position:absolute; top:44px; right:-18px; z-index:1; }
       .step p { color:var(--muted); font-size:.88rem; margin:0; }
-      .areas { background:#f5f6f8; }
-      .areas-grid { display:grid; grid-template-columns:.9fr 1.1fr; gap:50px; align-items:center; }
-      .area-list { display:flex; flex-wrap:wrap; gap:10px; margin:24px 0 28px; }
-      .area-list span { background:#fff; border:1px solid var(--line); border-radius:50px; padding:9px 13px; font-size:.84rem; font-weight:750; }
-      .map { min-height:360px; overflow:hidden; display:grid; place-items:center; border-radius:22px; background:linear-gradient(135deg, rgba(11,19,43,.82), rgba(11,19,43,.55)), radial-gradient(circle at 20% 30%,#7583a4 0 3px,transparent 4px), radial-gradient(circle at 70% 60%,#7583a4 0 3px,transparent 4px), #aeb8c9; background-size:auto, 38px 38px, 53px 53px,auto; color:#fff; text-align:center; box-shadow:var(--shadow); }
-      .map-pin { width:58px; height:58px; margin:auto; border-radius:50% 50% 50% 0; background:var(--red); transform:rotate(-45deg); display:grid; place-items:center; box-shadow:0 10px 25px rgba(0,0,0,.22); }
-      .map-pin span { transform:rotate(45deg); font-size:1.4rem; }
-      .map h3 { font-size:1.4rem; margin:18px 0 4px; }
-      .map p { color:#e2e6ed; margin:0; font-size:.9rem; }
+
+      /* areas */
+      .areas { background:linear-gradient(180deg, #0c0d10, #101216); }
+      .areas-grid { display:grid; grid-template-columns:.9fr 1.1fr; gap:52px; align-items:center; }
+      .area-list { display:flex; flex-wrap:wrap; gap:10px; margin:26px 0 30px; }
+      .area-list span { background:var(--panel); border:1px solid var(--line); border-radius:50px; padding:9px 15px; font-size:.84rem; font-weight:700; color:#dfe4ec; }
+      .map { min-height:380px; overflow:hidden; display:grid; place-items:center; border-radius:22px; position:relative; border:1px solid var(--line); background:linear-gradient(150deg, rgba(245,135,31,.14), rgba(10,10,10,.6)), radial-gradient(circle at 22% 30%,#2a2e37 0 3px,transparent 4px), radial-gradient(circle at 72% 62%,#2a2e37 0 3px,transparent 4px), #16181d; background-size:auto, 40px 40px, 55px 55px, auto; text-align:center; box-shadow:var(--shadow); }
+      .map-pin { width:60px; height:60px; margin:auto; border-radius:50% 50% 50% 0; background:var(--orange); transform:rotate(-45deg); display:grid; place-items:center; box-shadow:0 12px 30px rgba(245,135,31,.4); }
+      .map-pin span { transform:rotate(45deg); font-size:1.45rem; color:#160b00; }
+      .map h3 { font-size:1.42rem; margin:20px 0 4px; }
+      .map p { color:var(--muted); margin:0; font-size:.9rem; }
+
+      /* reviews */
       .reviews { overflow:hidden; }
       .review-grid { display:grid; grid-template-columns:repeat(3,1fr); gap:16px; }
-      .review { border:1px solid var(--line); border-radius:var(--radius); padding:25px; background:#fff; }
-      .stars { color:#f4ad22; font-size:1.02rem; letter-spacing:2px; margin-bottom:17px; }
-      .review blockquote { margin:0 0 22px; color:#324057; font-size:.96rem; line-height:1.65; }
-      .reviewer { display:flex; align-items:center; gap:10px; }
-      .avatar { width:36px; height:36px; border-radius:50%; color:#fff; background:var(--navy); display:grid; place-items:center; font-size:.76rem; font-weight:900; }
-      .reviewer b { display:block; font-size:.86rem; }
+      .review { border:1px solid var(--line); border-radius:var(--radius); padding:26px; background:var(--panel); }
+      .stars { color:#f5b301; font-size:1.05rem; letter-spacing:2px; margin-bottom:18px; }
+      .review blockquote { margin:0 0 22px; color:#d3d8e0; font-size:.96rem; line-height:1.65; }
+      .reviewer { display:flex; align-items:center; gap:11px; }
+      .avatar { width:38px; height:38px; border-radius:50%; color:#160b00; background:var(--orange); display:grid; place-items:center; font-size:.78rem; font-weight:900; }
+      .reviewer b { display:block; font-size:.87rem; color:#fff; }
       .reviewer small { color:var(--muted); display:block; font-size:.75rem; }
-      .faq-contact { background:var(--cream); }
-      .faq-contact-grid { display:grid; grid-template-columns:1.15fr .85fr; gap:54px; }
-      details { background:#fff; border:1px solid var(--line); border-radius:12px; padding:0 19px; margin-bottom:10px; }
-      summary { list-style:none; cursor:pointer; padding:17px 27px 17px 0; font-weight:820; font-size:.95rem; position:relative; }
+
+      /* faq + contact */
+      .faq-contact { background:linear-gradient(180deg, #101216, #0c0d10); }
+      .faq-contact-grid { display:grid; grid-template-columns:1.15fr .85fr; gap:56px; }
+      details { background:var(--panel); border:1px solid var(--line); border-radius:12px; padding:0 20px; margin-bottom:10px; }
+      summary { list-style:none; cursor:pointer; padding:18px 28px 18px 0; font-weight:800; font-size:.96rem; position:relative; color:#fff; }
       summary::-webkit-details-marker { display:none; }
-      summary::after { content:"+"; position:absolute; right:0; top:12px; color:var(--red); font-size:1.45rem; font-weight:500; }
+      summary::after { content:"+"; position:absolute; right:0; top:13px; color:var(--orange); font-size:1.5rem; font-weight:500; }
       details[open] summary::after { content:"×"; }
-      details p { color:var(--muted); margin:0 0 17px; font-size:.89rem; }
-      .contact-box { background:var(--navy); color:#fff; padding:32px; border-radius:22px; height:max-content; }
-      .contact-box .eyebrow { color:#ff9ba2; }
+      details p { color:var(--muted); margin:0 0 18px; font-size:.9rem; }
+      .contact-box { background:linear-gradient(150deg, #1b1e25, #121319); border:1px solid var(--line); color:#fff; padding:34px; border-radius:22px; height:max-content; position:relative; overflow:hidden; }
+      .contact-box::before { content:""; position:absolute; top:0; left:0; width:100%; height:4px; background:linear-gradient(90deg, var(--orange), var(--lime)); }
+      .contact-box .eyebrow { color:var(--orange); }
       .contact-box h2 { margin-top:.55rem; }
-      .contact-box p { color:#c5cbd6; }
-      .contact-list { display:grid; gap:15px; margin:26px 0; }
-      .contact-list div { display:flex; gap:11px; align-items:flex-start; color:#fff; font-size:.9rem; font-weight:700; }
-      .contact-list i { color:#ff9ba2; font-style:normal; width:20px; text-align:center; }
+      .contact-box p { color:var(--muted); }
+      .contact-list { display:grid; gap:16px; margin:26px 0; }
+      .contact-list div { display:flex; gap:12px; align-items:flex-start; color:#fff; font-size:.92rem; font-weight:700; }
+      .contact-list i { color:var(--orange); font-style:normal; width:20px; text-align:center; }
       .contact-box .btn { width:100%; margin-top:10px; }
-      footer { padding:56px 0 90px; background:#080e21; color:#fff; }
-      .footer-grid { display:grid; grid-template-columns:1.3fr 1fr 1fr; gap:40px; }
-      .footer-brand { color:#fff; }
-      .footer-copy { max-width:360px; color:#aeb7c8; font-size:.86rem; margin:16px 0 0; }
-      .footer-grid h3 { font-size:.83rem; text-transform:uppercase; letter-spacing:.11em; color:#ff9ba2; margin:5px 0 15px; }
-      .footer-links { display:grid; gap:9px; color:#c1c8d4; font-size:.85rem; }
-      .footer-bottom { border-top:1px solid rgba(255,255,255,.12); margin-top:39px; padding-top:18px; color:#8f99aa; font-size:.77rem; display:flex; justify-content:space-between; gap:15px; }
+
+      /* footer */
+      footer { padding:58px 0 92px; background:#060708; color:#fff; border-top:1px solid var(--line); }
+      .footer-grid { display:grid; grid-template-columns:1.3fr 1fr 1fr; gap:42px; }
+      .footer-copy { max-width:360px; color:var(--muted); font-size:.86rem; margin:16px 0 0; }
+      .footer-grid h3 { font-size:.83rem; text-transform:uppercase; letter-spacing:.12em; color:var(--orange); margin:5px 0 16px; }
+      .footer-links { display:grid; gap:10px; color:#c1c8d4; font-size:.85rem; }
+      .footer-links a:hover { color:var(--orange); }
+      .footer-bottom { border-top:1px solid var(--line); margin-top:40px; padding-top:20px; color:var(--muted-2); font-size:.77rem; display:flex; justify-content:space-between; gap:15px; }
+
       .mobile-actions { display:none; }
-      @media (max-width:850px) { .nav-links,.phone-nav { display:none; } .nav-call { display:inline-flex; min-height:42px; padding:0 14px; font-size:.82rem; } .hero-grid { display:block; min-height:auto; } .hero-content { padding:52px 0 28px; } .hero-image { position:relative; width:calc(100% + 40px); right:auto; height:265px; margin:0 -20px; } .hero-image::after { background:linear-gradient(180deg,#f9fafc 0%,transparent 35%,rgba(249,250,252,.08)); } .hero-image img { height:100%; max-height:none; object-position:center; } .proof .container { grid-template-columns:1fr 1fr; padding:10px 0; } .proof-item { padding:12px 7px; border-right:0; } .service-grid { grid-template-columns:repeat(2,1fr); } .why-grid,.areas-grid,.faq-contact-grid { grid-template-columns:1fr; gap:34px; } .emergency .container { padding:42px 0; display:block; } .emergency .actions { margin-top:24px; } .steps { grid-template-columns:1fr 1fr; } .step:not(:last-child)::after { display:none; } .review-grid { grid-template-columns:1fr; } .footer-grid { grid-template-columns:1fr 1fr; } }
-      @media (max-width:550px) { body { padding-bottom:75px; } .container { width:min(100% - 32px, 1160px); } .top-strip .container { font-size:.72rem; } .nav { min-height:65px; } .brand { font-size:1.08rem; } .brand-mark { width:29px; height:29px; } h1 { font-size:2.48rem; } section { padding:63px 0; } .actions { display:grid; grid-template-columns:1fr; } .btn { width:100%; } .trust-row { gap:9px 14px; margin:22px 0; } .trust-row span { font-size:.79rem; } .hero-number { text-align:center; } .service-grid { gap:11px; } .card { padding:17px 15px; border-radius:14px; } .service-icon { width:39px; height:39px; margin-bottom:12px; font-size:1.1rem; } .card h3 { font-size:.94rem; } .card p { font-size:.78rem; line-height:1.45; } .ticks { grid-template-columns:1fr; } .stat-panel { padding:27px; } .steps { grid-template-columns:1fr; } .step { padding:21px; } .area-list { gap:8px; } .area-list span { padding:8px 11px; font-size:.78rem; } .map { min-height:285px; } .emergency h2 { font-size:2.15rem; } .footer-grid { grid-template-columns:1fr; gap:24px; } .footer-bottom { display:block; line-height:1.7; } .mobile-actions { position:fixed; z-index:30; bottom:0; left:0; right:0; display:grid; grid-template-columns:1fr 1fr; gap:1px; background:#fff; box-shadow:0 -4px 20px rgba(11,19,43,.18); } .mobile-actions a { min-height:65px; display:flex; justify-content:center; align-items:center; gap:8px; color:#fff; font-size:.9rem; font-weight:900; } .mobile-actions .call { background:var(--red); } .mobile-actions .whatsapp { background:#1dbd5a; } }
+
+      @media (max-width:850px) {
+        .nav-links,.phone-nav { display:none; }
+        .nav-call { display:inline-flex; min-height:44px; padding:0 16px; font-size:.82rem; }
+        .hero-grid { min-height:auto; }
+        .hero-bg::after { background:linear-gradient(180deg, rgba(6,6,6,.55) 0%, rgba(6,6,6,.78) 55%, #060606 100%); }
+        .hero-content { padding:54px 0 44px; }
+        .proof .container { grid-template-columns:1fr 1fr; padding:10px 0; }
+        .proof-item { padding:13px 8px; border-right:0; }
+        .service-grid { grid-template-columns:repeat(2,1fr); }
+        .why-grid,.areas-grid,.faq-contact-grid { grid-template-columns:1fr; gap:36px; }
+        .emergency .container { padding:44px 0; display:block; }
+        .emergency .actions { margin-top:26px; }
+        .steps { grid-template-columns:1fr 1fr; }
+        .step:not(:last-child)::after { display:none; }
+        .review-grid { grid-template-columns:1fr; }
+        .footer-grid { grid-template-columns:1fr 1fr; }
+      }
+      @media (max-width:550px) {
+        body { padding-bottom:76px; }
+        .container { width:min(100% - 32px, 1180px); }
+        .top-strip .container { font-size:.72rem; }
+        .nav { min-height:66px; }
+        .brand-txt b { font-size:1.06rem; }
+        .brand-logo { width:36px; height:40px; }
+        h1 { font-size:2.55rem; }
+        section { padding:64px 0; }
+        .actions { display:grid; grid-template-columns:1fr; }
+        .btn { width:100%; }
+        .trust-row { gap:9px 15px; margin:22px 0; }
+        .trust-row span { font-size:.82rem; }
+        .hero-number { text-align:center; }
+        .service-grid { gap:11px; }
+        .card { padding:18px 16px; border-radius:14px; }
+        .service-icon { width:42px; height:42px; margin-bottom:13px; font-size:1.15rem; }
+        .card h3 { font-size:.95rem; }
+        .card p { font-size:.79rem; line-height:1.45; }
+        .ticks { grid-template-columns:1fr; }
+        .stat-panel { padding:28px; }
+        .steps { grid-template-columns:1fr; }
+        .step { padding:22px; }
+        .area-list span { padding:8px 12px; font-size:.79rem; }
+        .map { min-height:300px; }
+        .emergency h2 { font-size:2.2rem; }
+        .footer-grid { grid-template-columns:1fr; gap:26px; }
+        .footer-bottom { display:block; line-height:1.7; }
+        .mobile-actions { position:fixed; z-index:30; bottom:0; left:0; right:0; display:grid; grid-template-columns:1fr 1fr; gap:1px; background:#000; box-shadow:0 -6px 24px rgba(0,0,0,.5); }
+        .mobile-actions a { min-height:66px; display:flex; justify-content:center; align-items:center; gap:8px; color:#fff; font-size:.92rem; font-weight:900; }
+        .mobile-actions .call { background:var(--orange); color:#160b00; }
+        .mobile-actions .whatsapp { background:var(--green-dark); }
+      }
     </style>
     <script type="application/ld+json">
       {
@@ -160,7 +254,7 @@
         "description":"24/7 mobile tyre repair, replacement and roadside tyre assistance across Huntingdon and Cambridgeshire.",
         "telephone":"+447469341716",
         "url":"https://trustautos.co.uk/",
-        "image":"https://trustautos.co.uk/trust-autos-mobile-tyre-van.png",
+        "image":"https://trustautos.co.uk/trust-autos-hero.jpg",
         "address":{"@type":"PostalAddress","streetAddress":"Unit 11, Latham Road","addressLocality":"Huntingdon","addressRegion":"Cambridgeshire","postalCode":"PE29 6YE","addressCountry":"GB"},
         "openingHours":"Mo-Su 00:00-23:59",
         "areaServed":["Huntingdon","Cambridgeshire","St Neots","St Ives","Godmanchester","Ramsey","Peterborough","Cambridge"],
@@ -186,57 +280,65 @@
     <div class="top-strip"><div class="container"><span class="pulse"></span> Emergency mobile tyre assistance available 24 hours, 7 days a week</div></div>
     <header>
       <nav class="container nav" aria-label="Main navigation">
-        <a class="brand" href="#top" aria-label="Trust Autos home"><span class="brand-mark">◉</span><span>TRUST <em>AUTOS</em> LTD</span></a>
+        <a class="brand" href="#top" aria-label="Trust Autos home">
+          <svg class="brand-logo" viewBox="0 0 42 46" fill="none" aria-hidden="true" xmlns="http://www.w3.org/2000/svg">
+            <path d="M21 1 40 8v16c0 11-8 18-19 21C10 42 2 35 2 24V8L21 1Z" fill="#15171c" stroke="#f5871f" stroke-width="2"/>
+            <circle cx="18" cy="19" r="9.5" fill="none" stroke="#e8ebf0" stroke-width="2.4"/>
+            <circle cx="18" cy="19" r="3.4" fill="#e8ebf0"/>
+            <path d="M15 32.5l4.5 4.5L30 24" stroke="#8bc53f" stroke-width="4.2" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+          <span class="brand-txt"><b>TRUST <em>AUTOS</em></b><small>Your Complete Automotive Partner</small></span>
+        </a>
         <div class="nav-links"><a href="#services">Services</a><a href="#areas">Areas</a><a href="#reviews">Reviews</a><a href="#contact">Contact</a></div>
-        <a class="phone-nav" href="tel:+447469341716"><span>Need help now?</span><strong>07469 341716</strong></a>
+        <a class="phone-nav" href="tel:+447469341716"><span class="pn-ic">☎</span><span><span>Need help now?</span><strong>07469 341716</strong></span></a>
         <a class="btn btn-call nav-call" href="tel:+447469341716">☎ Call Now</a>
       </nav>
     </header>
     <main id="top">
       <section class="hero" aria-labelledby="hero-title">
+        <div class="hero-bg"><img src="trust-autos-hero.jpg" width="1512" height="1000" alt="Trust Autos mobile tyre fleet outside the Huntingdon depot" fetchpriority="high" /></div>
         <div class="container hero-grid">
           <div class="hero-content">
-            <span class="eyebrow">Huntingdon & Cambridgeshire</span>
-            <h1 id="hero-title">24/7 Mobile Tyre <strong>Repair & Replacement</strong></h1>
-            <p class="lead">Fast emergency tyre replacement, puncture repairs, roadside assistance and mobile tyre fitting wherever you are.</p>
+            <span class="badge247">● 24/7 Emergency Call-Out</span>
+            <h1 id="hero-title">24/7 Mobile Tyre <strong>Repair &amp; Replacement</strong></h1>
+            <p class="lead">Fast emergency tyre replacement, puncture repairs, roadside assistance and mobile tyre fitting wherever you are across Huntingdon &amp; Cambridgeshire.</p>
             <div class="trust-row" aria-label="Service benefits"><span>Fast response</span><span>Fully insured</span><span>Professional technicians</span><span>Available 24/7</span></div>
             <div class="actions"><a class="btn btn-call" href="tel:+447469341716">☎&nbsp; Call Now</a><a class="btn btn-whatsapp" href="https://wa.me/447469341716?text=Hi%20Trust%20Autos%2C%20I%20need%20mobile%20tyre%20help." target="_blank" rel="noopener">◉&nbsp; WhatsApp Now</a></div>
             <p class="hero-number">Need help right now? <a href="tel:+447469341716">07469 341716</a></p>
           </div>
-          <div class="hero-image"><img src="trust-autos-mobile-tyre-van.png" width="1680" height="940" alt="Trust Autos Ltd 24/7 mobile tyre service van" fetchpriority="high" /></div>
         </div>
       </section>
-      <div class="proof"><div class="container"><div class="proof-item"><span class="proof-icon">◷</span><div><b>24/7 coverage</b><small>Day, night & weekends</small></div></div><div class="proof-item"><span class="proof-icon">⌁</span><div><b>We come to you</b><small>Roadside, home or work</small></div></div><div class="proof-item"><span class="proof-icon">✓</span><div><b>Tyres supplied</b><small>Premium & budget choices</small></div></div><div class="proof-item"><span class="proof-icon">★</span><div><b>Local service</b><small>Huntingdon based</small></div></div></div></div>
+      <div class="proof"><div class="container"><div class="proof-item"><span class="proof-icon">◷</span><div><b>24/7 coverage</b><small>Day, night &amp; weekends</small></div></div><div class="proof-item"><span class="proof-icon">⌁</span><div><b>We come to you</b><small>Roadside, home or work</small></div></div><div class="proof-item"><span class="proof-icon">✓</span><div><b>Tyres supplied</b><small>Premium &amp; budget choices</small></div></div><div class="proof-item"><span class="proof-icon">★</span><div><b>Local service</b><small>Huntingdon based</small></div></div></div></div>
 
       <section id="services">
-        <div class="container"><div class="section-head"><span class="eyebrow">What we do</span><h2>Back on the road, without the stress.</h2><p class="lead">From an unexpected puncture to a complete tyre replacement, our mobile team brings the equipment and know-how to you.</p></div>
+        <div class="container"><div class="section-head"><span class="eyebrow">What we do</span><h2>Back on the road, <span class="hl-orange">without the stress.</span></h2><p class="lead">From an unexpected puncture to a complete tyre replacement, our mobile team brings the equipment and know-how to you.</p></div>
           <div class="service-grid">
             <article class="card"><div class="service-icon">⚠</div><h3>Emergency Tyre Replacement</h3><p>Urgent tyre help at the roadside, home or workplace.</p></article>
             <article class="card"><div class="service-icon">◉</div><h3>Mobile Tyre Fitting</h3><p>Convenient fitting without a trip to the garage.</p></article>
             <article class="card"><div class="service-icon">⌁</div><h3>Puncture Repairs</h3><p>Safe, practical repairs where your tyre is suitable.</p></article>
             <article class="card"><div class="service-icon">⚿</div><h3>Locking Wheel Nut Removal</h3><p>Professional help when a locking nut causes a delay.</p></article>
             <article class="card"><div class="service-icon">◌</div><h3>Wheel Balancing</h3><p>Helping deliver a smoother, more confident drive.</p></article>
-            <article class="card"><div class="service-icon">▣</div><h3>New Tyres Supplied & Fitted</h3><p>Premium and budget tyre options to suit your needs.</p></article>
+            <article class="card"><div class="service-icon">▣</div><h3>New Tyres Supplied &amp; Fitted</h3><p>Premium and budget tyre options to suit your needs.</p></article>
             <article class="card"><div class="service-icon">⌖</div><h3>Roadside Assistance</h3><p>Rapid support when a flat tyre stops your journey.</p></article>
-            <article class="card"><div class="service-icon">⌂</div><h3>Home & Workplace Fitting</h3><p>Tyre service arranged around your day, not ours.</p></article>
+            <article class="card"><div class="service-icon">⌂</div><h3>Home &amp; Workplace Fitting</h3><p>Tyre service arranged around your day, not ours.</p></article>
           </div>
           <div class="section-action"><a class="btn btn-call" href="tel:+447469341716">☎&nbsp; Call Now for Help</a><a class="btn btn-outline" href="https://wa.me/447469341716?text=Hi%20Trust%20Autos%2C%20I%20need%20mobile%20tyre%20help." target="_blank" rel="noopener">◉&nbsp; Ask on WhatsApp</a></div>
         </div>
       </section>
 
-      <section class="why"><div class="container why-grid"><div class="why-copy"><span class="eyebrow">Why Trust Autos</span><h2>Reliable help when every minute matters.</h2><p class="lead">You don’t need the extra worry of finding a garage or arranging recovery. Call us, tell us where you are, and we’ll take care of the tyre problem.</p><ul class="ticks"><li>24/7 emergency service</li><li>Fast response times</li><li>Mobile service that comes to you</li><li>Competitive, clear pricing</li><li>Experienced technicians</li><li>Premium & budget tyres</li><li>Fully insured service</li><li>Friendly local team</li></ul><div class="section-action"><a class="btn btn-call" href="tel:+447469341716">☎&nbsp; Speak to Our Team</a></div></div><aside class="stat-panel"><h3>Emergency assistance, without the runaround.</h3><p>We focus on getting you safely moving again with a helpful, professional service from first call to completed job.</p><div class="stats"><div><strong>24 / 7</strong><span>Emergency availability</span></div><div><strong>1 call</strong><span>To arrange your help</span></div></div></aside></div></section>
+      <section class="why"><div class="container why-grid"><div class="why-copy"><span class="eyebrow">Why Trust Autos</span><h2>Reliable help when <span class="hl-lime">every minute matters.</span></h2><p class="lead">You don’t need the extra worry of finding a garage or arranging recovery. Call us, tell us where you are, and we’ll take care of the tyre problem.</p><ul class="ticks"><li>24/7 emergency service</li><li>Fast response times</li><li>Mobile service that comes to you</li><li>Competitive, clear pricing</li><li>Experienced technicians</li><li>Premium &amp; budget tyres</li><li>Fully insured service</li><li>Friendly local team</li></ul><div class="section-action"><a class="btn btn-call" href="tel:+447469341716">☎&nbsp; Speak to Our Team</a></div></div><aside class="stat-panel"><h3>Emergency assistance, without the runaround.</h3><p>We focus on getting you safely moving again with a helpful, professional service from first call to completed job.</p><div class="stats"><div><strong>24 / 7</strong><span>Emergency availability</span></div><div><strong>1 call</strong><span>To arrange your help</span></div></div></aside></div></section>
 
       <section class="emergency"><div class="container"><div><span class="eyebrow">Need help right now?</span><h2>Stranded with a flat tyre?</h2><p>We’ll come to you, day or night.</p></div><div class="actions"><a class="btn btn-call" href="tel:+447469341716">☎&nbsp; Call Now</a><a class="btn btn-whatsapp" href="https://wa.me/447469341716?text=Hi%20Trust%20Autos%2C%20I%20am%20stranded%20with%20a%20flat%20tyre." target="_blank" rel="noopener">◉&nbsp; WhatsApp Now</a></div></div></section>
 
-      <section><div class="container"><div class="section-head"><span class="eyebrow">Simple process</span><h2>Tyre trouble solved in four easy steps.</h2><p class="lead">We make it straightforward to get assistance wherever you are in our service area.</p></div><div class="steps"><article class="step"><h3>Call or WhatsApp Us</h3><p>Tell us what has happened and the help you need.</p></article><article class="step"><h3>Share Your Location</h3><p>Send your location and vehicle details so we can prepare.</p></article><article class="step"><h3>We Come to You</h3><p>A mobile technician travels to your roadside, home or work.</p></article><article class="step"><h3>Get Back on the Road</h3><p>We repair or replace your tyre so you can continue safely.</p></article></div><div class="section-action"><a class="btn btn-call" href="tel:+447469341716">☎&nbsp; Get Help Now</a><a class="btn btn-whatsapp" href="https://wa.me/447469341716?text=Hi%20Trust%20Autos%2C%20I%20need%20mobile%20tyre%20help." target="_blank" rel="noopener">◉&nbsp; WhatsApp Us</a></div></div></section>
+      <section><div class="container"><div class="section-head"><span class="eyebrow">Simple process</span><h2>Tyre trouble solved in <span class="hl-orange">four easy steps.</span></h2><p class="lead">We make it straightforward to get assistance wherever you are in our service area.</p></div><div class="steps"><article class="step"><h3>Call or WhatsApp Us</h3><p>Tell us what has happened and the help you need.</p></article><article class="step"><h3>Share Your Location</h3><p>Send your location and vehicle details so we can prepare.</p></article><article class="step"><h3>We Come to You</h3><p>A mobile technician travels to your roadside, home or work.</p></article><article class="step"><h3>Get Back on the Road</h3><p>We repair or replace your tyre so you can continue safely.</p></article></div><div class="section-action"><a class="btn btn-call" href="tel:+447469341716">☎&nbsp; Get Help Now</a><a class="btn btn-whatsapp" href="https://wa.me/447469341716?text=Hi%20Trust%20Autos%2C%20I%20need%20mobile%20tyre%20help." target="_blank" rel="noopener">◉&nbsp; WhatsApp Us</a></div></div></section>
 
-      <section class="areas" id="areas"><div class="container areas-grid"><div><span class="eyebrow">Mobile coverage</span><h2>Tyre help across Huntingdon & beyond.</h2><p class="lead">Based in Huntingdon, we provide prompt mobile tyre assistance throughout Cambridgeshire and surrounding areas.</p><div class="area-list" aria-label="Service areas"><span>Huntingdon</span><span>Cambridgeshire</span><span>St Neots</span><span>St Ives</span><span>Godmanchester</span><span>Ramsey</span><span>Peterborough</span><span>Cambridge</span><span>Surrounding Areas</span></div><a class="btn btn-call" href="tel:+447469341716">☎&nbsp; Check Your Area</a></div><a class="map" href="https://www.google.com/maps/search/?api=1&query=Unit+11+Latham+Road+Huntingdon+Cambridgeshire+PE29+6YE" target="_blank" rel="noopener" aria-label="Open Trust Autos location in Google Maps"><div><div class="map-pin"><span>⌖</span></div><h3>Based in Huntingdon</h3><p>Tap for directions or call to check coverage.</p></div></a></div></section>
+      <section class="areas" id="areas"><div class="container areas-grid"><div><span class="eyebrow">Mobile coverage</span><h2>Tyre help across <span class="hl-orange">Huntingdon &amp; beyond.</span></h2><p class="lead">Based in Huntingdon, we provide prompt mobile tyre assistance throughout Cambridgeshire and surrounding areas.</p><div class="area-list" aria-label="Service areas"><span>Huntingdon</span><span>Cambridgeshire</span><span>St Neots</span><span>St Ives</span><span>Godmanchester</span><span>Ramsey</span><span>Peterborough</span><span>Cambridge</span><span>Surrounding Areas</span></div><a class="btn btn-call" href="tel:+447469341716">☎&nbsp; Check Your Area</a></div><a class="map" href="https://www.google.com/maps/search/?api=1&query=Unit+11+Latham+Road+Huntingdon+Cambridgeshire+PE29+6YE" target="_blank" rel="noopener" aria-label="Open Trust Autos location in Google Maps"><div><div class="map-pin"><span>⌖</span></div><h3>Based in Huntingdon</h3><p>Tap for directions or call to check coverage.</p></div></a></div></section>
 
-      <section id="reviews"><div class="container"><div class="section-head"><span class="eyebrow">Customer feedback</span><h2>Trusted when drivers need help most.</h2><p class="lead">A calm, professional response makes all the difference during a tyre emergency.</p></div><div class="review-grid"><article class="review"><div class="stars" aria-label="5 out of 5 stars">★★★★★</div><blockquote>“Had a flat late in the evening and was really stuck. The service was quick, friendly and got me safely back on the road. Couldn’t ask for more.”</blockquote><div class="reviewer"><span class="avatar">JM</span><div><b>James M.</b><small>Emergency roadside call-out</small></div></div></article><article class="review"><div class="stars" aria-label="5 out of 5 stars">★★★★★</div><blockquote>“Excellent mobile fitting at my workplace. Clear communication from the start and everything was completed without disrupting my day.”</blockquote><div class="reviewer"><span class="avatar">SB</span><div><b>Sarah B.</b><small>Workplace tyre fitting</small></div></div></article><article class="review"><div class="stars" aria-label="5 out of 5 stars">★★★★★</div><blockquote>“Professional, efficient and reassuring when we needed help with a tyre replacement. I would definitely use Trust Autos again.”</blockquote><div class="reviewer"><span class="avatar">DT</span><div><b>David T.</b><small>Mobile tyre replacement</small></div></div></article></div><div class="section-action"><a class="btn btn-call" href="tel:+447469341716">☎&nbsp; Need the Same Great Service?</a><a class="btn btn-outline" href="https://wa.me/447469341716?text=Hi%20Trust%20Autos%2C%20I%20need%20mobile%20tyre%20help." target="_blank" rel="noopener">◉&nbsp; WhatsApp Us</a></div></div></section>
+      <section id="reviews"><div class="container"><div class="section-head"><span class="eyebrow">Customer feedback</span><h2>Trusted when drivers <span class="hl-lime">need help most.</span></h2><p class="lead">A calm, professional response makes all the difference during a tyre emergency.</p></div><div class="review-grid"><article class="review"><div class="stars" aria-label="5 out of 5 stars">★★★★★</div><blockquote>“Had a flat late in the evening and was really stuck. The service was quick, friendly and got me safely back on the road. Couldn’t ask for more.”</blockquote><div class="reviewer"><span class="avatar">JM</span><div><b>James M.</b><small>Emergency roadside call-out</small></div></div></article><article class="review"><div class="stars" aria-label="5 out of 5 stars">★★★★★</div><blockquote>“Excellent mobile fitting at my workplace. Clear communication from the start and everything was completed without disrupting my day.”</blockquote><div class="reviewer"><span class="avatar">SB</span><div><b>Sarah B.</b><small>Workplace tyre fitting</small></div></div></article><article class="review"><div class="stars" aria-label="5 out of 5 stars">★★★★★</div><blockquote>“Professional, efficient and reassuring when we needed help with a tyre replacement. I would definitely use Trust Autos again.”</blockquote><div class="reviewer"><span class="avatar">DT</span><div><b>David T.</b><small>Mobile tyre replacement</small></div></div></article></div><div class="section-action"><a class="btn btn-call" href="tel:+447469341716">☎&nbsp; Need the Same Great Service?</a><a class="btn btn-outline" href="https://wa.me/447469341716?text=Hi%20Trust%20Autos%2C%20I%20need%20mobile%20tyre%20help." target="_blank" rel="noopener">◉&nbsp; WhatsApp Us</a></div></div></section>
 
       <section class="faq-contact" id="contact"><div class="container faq-contact-grid"><div><span class="eyebrow">Questions answered</span><h2>Frequently asked questions.</h2><details><summary>How quickly can you arrive?</summary><p>Response times depend on your exact location and traffic. Call or WhatsApp with your location and we’ll give you a clear estimated arrival time straight away.</p></details><details><summary>Are you available at night?</summary><p>Yes. Trust Autos Ltd operates 24 hours a day, 7 days a week for emergency mobile tyre assistance.</p></details><details><summary>Do you repair punctures?</summary><p>Where it is safe and suitable, we can carry out a puncture repair. If a repair is not possible, we can discuss replacement options.</p></details><details><summary>Can you replace tyres roadside?</summary><p>Yes. We can replace tyres at the roadside, at home, at work or at another safe location.</p></details><details><summary>Do you supply new tyres?</summary><p>Yes. We supply and fit a range of premium and budget tyres, subject to availability.</p></details><details><summary>Can I pay by card?</summary><p>Please call us to confirm the most convenient payment option for your booking.</p></details></div><aside class="contact-box"><span class="eyebrow">Trust Autos Ltd</span><h2>Ready when you need us.</h2><p>For emergency roadside assistance or mobile tyre fitting, call us now or send your location on WhatsApp.</p><div class="contact-list"><div><i>☎</i><a href="tel:+447469341716">07469 341716</a></div><div><i>◉</i><span>24 Hours • 7 Days a Week</span></div><div><i>⌖</i><a href="https://www.google.com/maps/search/?api=1&query=Unit+11+Latham+Road+Huntingdon+Cambridgeshire+PE29+6YE" target="_blank" rel="noopener">Unit 11, Latham Road<br>Huntingdon, Cambridgeshire<br>PE29 6YE</a></div></div><a class="btn btn-call" href="tel:+447469341716">☎&nbsp; Call Now</a><a class="btn btn-whatsapp" href="https://wa.me/447469341716?text=Hi%20Trust%20Autos%2C%20I%20need%20mobile%20tyre%20help." target="_blank" rel="noopener">◉&nbsp; WhatsApp Now</a></aside></div></section>
     </main>
-    <footer><div class="container"><div class="footer-grid"><div><a class="brand footer-brand" href="#top"><span class="brand-mark">◉</span><span>TRUST <em>AUTOS</em> LTD</span></a><p class="footer-copy">Professional 24/7 mobile tyre repair, replacement and roadside assistance from your local Huntingdon team.</p></div><div><h3>Contact details</h3><div class="footer-links"><a href="tel:+447469341716">07469 341716</a><a href="https://wa.me/447469341716" target="_blank" rel="noopener">WhatsApp Trust Autos</a><span>24 Hours • 7 Days a Week</span><span>Unit 11, Latham Road<br>Huntingdon, PE29 6YE</span></div></div><div><h3>Quick links</h3><div class="footer-links"><a href="#services">Our Services</a><a href="#areas">Service Areas</a><a href="#reviews">Customer Reviews</a><a href="#contact">Contact Us</a><a href="privacy-policy.html">Privacy Policy</a><a href="terms-and-conditions.html">Terms & Conditions</a></div></div></div><div class="footer-bottom"><span>© 2026 Trust Autos Ltd. All rights reserved.</span><span>Mobile Tyre Fitting Huntingdon • Emergency Tyre Repair Cambridgeshire</span></div></div></footer>
+    <footer><div class="container"><div class="footer-grid"><div><a class="brand" href="#top"><svg class="brand-logo" viewBox="0 0 42 46" fill="none" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"><path d="M21 1 40 8v16c0 11-8 18-19 21C10 42 2 35 2 24V8L21 1Z" fill="#15171c" stroke="#f5871f" stroke-width="2"/><circle cx="18" cy="19" r="9.5" fill="none" stroke="#e8ebf0" stroke-width="2.4"/><circle cx="18" cy="19" r="3.4" fill="#e8ebf0"/><path d="M15 32.5l4.5 4.5L30 24" stroke="#8bc53f" stroke-width="4.2" stroke-linecap="round" stroke-linejoin="round"/></svg><span class="brand-txt"><b>TRUST <em>AUTOS</em></b><small>Your Complete Automotive Partner</small></span></a><p class="footer-copy">Professional 24/7 mobile tyre repair, replacement and roadside assistance from your local Huntingdon team.</p></div><div><h3>Contact details</h3><div class="footer-links"><a href="tel:+447469341716">07469 341716</a><a href="https://wa.me/447469341716" target="_blank" rel="noopener">WhatsApp Trust Autos</a><span>24 Hours • 7 Days a Week</span><span>Unit 11, Latham Road<br>Huntingdon, PE29 6YE</span></div></div><div><h3>Quick links</h3><div class="footer-links"><a href="#services">Our Services</a><a href="#areas">Service Areas</a><a href="#reviews">Customer Reviews</a><a href="#contact">Contact Us</a><a href="privacy-policy.html">Privacy Policy</a><a href="terms-and-conditions.html">Terms &amp; Conditions</a></div></div></div><div class="footer-bottom"><span>© 2026 Trust Autos Ltd. All rights reserved.</span><span>Mobile Tyre Fitting Huntingdon • Emergency Tyre Repair Cambridgeshire</span></div></div></footer>
     <div class="mobile-actions" aria-label="Quick contact"><a class="call" href="tel:+447469341716">☎&nbsp; Call Now</a><a class="whatsapp" href="https://wa.me/447469341716?text=Hi%20Trust%20Autos%2C%20I%20need%20mobile%20tyre%20help." target="_blank" rel="noopener">◉&nbsp; WhatsApp</a></div>
   </body>
 </html>
